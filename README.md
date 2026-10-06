@@ -25,7 +25,7 @@ Live site: https://samuvelnatarajanofficial.github.io/
 
 All personal content lives in [`src/data/profile.ts`](src/data/profile.ts).
 
-Replace the `YOUR_*` placeholders (email, GitHub, LinkedIn, project repository URLs). Links that still hold a placeholder are hidden from the UI.
+Contact details, projects, skills and experience are all defined there. Any value starting with `YOUR_` is treated as a placeholder and its link is hidden from the UI. Internal projects use `privateNote` instead of a repository link.
 
 Replace `public/resume.pdf` with your own resume (keep the file name).
 

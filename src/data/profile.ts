@@ -222,7 +222,7 @@ export const projects: Project[] = [
     ],
     stack: ['GitHub Pages'],
     diagram: 'spendflow',
-    github: 'YOUR_SPENDFLOW_REPO_URL',
+    github: 'https://github.com/SamuvelNatarajanOfficial/SpendFlow',
     live: 'https://samuvelnatarajanofficial.github.io/SpendFlow/',
   },
 ]
