@@ -3,6 +3,8 @@ import { navItems, profile } from '../data/profile'
 import { useActiveSection } from '../hooks/useActiveSection'
 import { CloseIcon, MenuIcon } from './Icons'
 import { ResumeButton } from './ResumeButton'
+import { ResumeMenu } from './ResumeMenu'
+import { ResumePreview } from './ResumePreview'
 
 const ids = navItems.map((n) => n.id)
 
@@ -59,7 +61,9 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <ResumeButton size="sm" className="hidden sm:inline-flex" />
+          <div className="hidden sm:block">
+            <ResumeMenu />
+          </div>
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-700 text-slate-200 hover:bg-slate-800 md:hidden"
@@ -88,7 +92,8 @@ export function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="pt-2">
+            <li className="flex flex-col gap-2 pt-2">
+              <ResumePreview variant="secondary" />
               <ResumeButton className="w-full" />
             </li>
           </ul>
