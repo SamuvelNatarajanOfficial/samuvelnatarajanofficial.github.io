@@ -1,6 +1,6 @@
 # Samuvel Natarajan — DevOps Engineer Portfolio
 
-Personal portfolio for Samuvel Natarajan, a DevOps Engineer with 3.6+ years of experience in cloud infrastructure, CI/CD, containers, Kubernetes, Linux, and monitoring.
+Personal portfolio for Samuvel Natarajan, a DevOps Engineer with 3.5+ years of experience in cloud infrastructure, CI/CD, containers, Kubernetes, Linux, and monitoring.
 
 Live site: https://samuvelnatarajanofficial.github.io/
 

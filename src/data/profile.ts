@@ -11,10 +11,10 @@ export const isConfigured = (value: string) => !value.startsWith('YOUR_')
 export const profile = {
   name: 'Samuvel Natarajan',
   role: 'DevOps Engineer',
-  headline: 'DevOps Engineer | Cloud Infrastructure | CI/CD | Kubernetes',
-  experienceYears: '3.6+',
+  headline: 'DevOps Engineer | Azure & AKS | CI/CD | Infrastructure as Code | Kubernetes',
+  experienceYears: '3.5+',
   intro:
-    'DevOps Engineer with 3.6+ years of experience in cloud infrastructure, CI/CD automation, containerization, Kubernetes, Linux, and monitoring. Focused on building reliable, automated, and scalable deployment environments.',
+    'DevOps Engineer with 3.5+ years of experience in cloud infrastructure, CI/CD automation, and containerized software delivery on Azure and AWS. Focused on reliable, automated, and secure deployments across development, staging, and production.',
   availability: "I'm currently open to DevOps and Cloud Engineering opportunities.",
   siteUrl: 'https://samuvelnatarajanofficial.github.io/',
 
@@ -29,15 +29,15 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    'I am a DevOps Engineer with 3.6+ years of professional experience working across cloud infrastructure, CI/CD, containerization, and monitoring. My focus is on making software delivery repeatable and dependable — from commit to production.',
-    'Day to day I work with Linux, Docker, Kubernetes, Jenkins, and GitHub Actions on AWS and Azure, automating infrastructure and deployments so teams can release with confidence. I use Python and Groovy as scripting tools to support that automation.',
-    'I approach systems with a production mindset: automate what is repetitive, make deployments predictable, and keep services observable with Prometheus and Grafana.',
+    'I am a DevOps Engineer with 3.5+ years of professional experience working across cloud infrastructure, CI/CD, containerization, and monitoring. My focus is on making software delivery repeatable and dependable — from commit to production.',
+    'Day to day I work with Docker, Kubernetes (AKS and EKS), Terraform, Jenkins, GitHub Actions, and Argo CD on Azure and AWS, automating infrastructure and deployments so teams can release with confidence. I integrate Trivy, SonarQube, Gitleaks, and OWASP Dependency Check into pipelines, and use Python and Bash to automate recurring work.',
+    'I approach systems with a production mindset: automate what is repetitive, make deployments predictable, keep services observable with Prometheus, Grafana, and Loki, and keep an eye on cloud cost. I also contribute to internal AI-agent tooling, including MCP tools and LLM-as-a-judge evaluation.',
   ],
   focus: [
     'Cloud infrastructure',
     'CI/CD automation',
     'Containers & Kubernetes',
-    'Linux administration',
+    'DevSecOps & GitOps',
     'Infrastructure automation',
     'Monitoring & observability',
   ],
@@ -53,17 +53,17 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Cloud',
     description: 'Public cloud platforms',
-    items: ['AWS', 'Microsoft Azure', 'Oracle Cloud (OCI)'],
+    items: ['Microsoft Azure', 'AWS'],
   },
   {
     title: 'CI/CD & GitOps',
     description: 'Build and delivery automation',
-    items: ['GitHub Actions', 'Jenkins', 'ArgoCD', 'Git', 'GitHub'],
+    items: ['Jenkins', 'GitHub Actions', 'Argo CD', 'Git', 'GitHub'],
   },
   {
     title: 'Infrastructure as Code',
     description: 'Repeatable, multi-environment infrastructure',
-    items: ['Terraform', 'Ansible'],
+    items: ['Terraform', 'Reusable modules', 'Remote state', 'Ansible'],
   },
   {
     title: 'Containers & Orchestration',
@@ -78,17 +78,22 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Security & Quality',
     description: 'Security-conscious pipelines',
-    items: ['AWS IAM', 'Trivy', 'SonarQube', 'Gitleaks', 'Hadolint'],
+    items: ['Microsoft Entra ID', 'Azure RBAC', 'AWS IAM', 'Azure Key Vault', 'Trivy', 'SonarQube', 'Gitleaks', 'OWASP Dependency Check', 'Hadolint'],
   },
   {
     title: 'Linux & Networking',
     description: 'Systems and cloud networking',
-    items: ['Linux', 'Nginx', 'VPC / VNet', 'ALB', 'Route 53', 'Azure DNS', 'Kubernetes Ingress', 'SSL termination'],
+    items: ['Linux', 'Nginx', 'VPC / VNet', 'Azure Firewall & NSGs', 'ALB', 'Route 53', 'Azure DNS', 'Kubernetes Ingress', 'SSL/TLS'],
   },
   {
-    title: 'Scripting',
-    description: 'Automation support',
-    items: ['Bash', 'Python', 'Groovy', 'YAML'],
+    title: 'Scripting & Testing',
+    description: 'Automation and test support',
+    items: ['Python', 'Bash', 'Groovy', 'YAML', 'Pytest', 'Selenium'],
+  },
+  {
+    title: 'Databases & Practices',
+    description: 'Data stores and ways of working',
+    items: ['PostgreSQL', 'MongoDB', 'Agile / Scrum'],
   },
 ]
 
@@ -117,28 +122,56 @@ export const azureServices: CloudService[] = [
   { name: 'Storage', label: 'Azure Storage accounts' },
   { name: 'DNS', label: 'Azure DNS zones' },
   { name: 'Entra ID', label: 'Microsoft Entra ID (Azure AD)' },
+  { name: 'RBAC', label: 'Azure role-based access control' },
   { name: 'AKS', label: 'Azure Kubernetes Service' },
+  { name: 'Key Vault', label: 'Azure Key Vault' },
+  { name: 'Logic Apps', label: 'Azure Logic Apps' },
+  { name: 'Firewall & NSGs', label: 'Azure Firewall and network security groups' },
 ]
 
 export const experience = [
   {
     role: 'DevOps Engineer',
-    company: 'Majordomo, Inc.',
+    company: 'Majordomo Systems India Private Limited',
     location: 'Chennai, India',
-    period: 'April 2023 – Present',
-    duration: '3.6+ years',
-    summary: 'Cloud infrastructure, CI/CD, Kubernetes, GitOps and observability on AWS and Azure.',
+    period: 'Jul 2025 – Present',
+    summary: 'Kubernetes, CI/CD, DevSecOps, GitOps and observability on Azure and AWS.',
     responsibilities: [
-      'Architected and automated cloud infrastructure on AWS and Azure with modular Terraform and remote state across dev, staging and production, reducing provisioning time by ~60%.',
-      'Designed and maintained CI/CD pipelines with GitHub Actions and Jenkins covering build, test, security scan and deploy stages, reducing deployment time by ~70%.',
-      'Deployed and operated containerized microservices on Amazon EKS using Docker and Helm, with Horizontal Pod Autoscaling and resource limits.',
-      'Implemented GitOps with ArgoCD for automated, zero-downtime rollouts from a dedicated GitOps repository.',
-      'Built an observability stack with Prometheus, Grafana and Loki, with Alertmanager routing to Slack and email, reducing mean time to detect incidents by ~50%.',
-      'Integrated SonarQube quality gates and Trivy image scanning into CI pipelines.',
-      'Applied cost-optimization practices on AWS and Azure development environments: tagging, budget alerts and scheduled shutdown of non-production instances.',
-      'Managed Linux-based EC2 instances and wrote Bash scripts for automation, log management and operational tasks.',
+      'Kubernetes and containers: deployed and operated containerized workloads on Azure AKS and AWS EKS using Docker, Helm and kubectl across development, staging and production, including Kubernetes networking and ingress.',
+      "CI/CD and DevSecOps: built Jenkins pipelines triggered by code changes to automate builds, testing, security scans and deployments. Integrated Trivy, SonarQube, Gitleaks and OWASP Dependency Check, introducing Gitleaks and OWASP Dependency Check as the organization's first implementation.",
+      'GitOps: managed Argo CD deployments from Git-based Kubernetes manifests and Helm configurations in non-production environments.',
+      'Cloud infrastructure and IaC: provisioned and managed AWS infrastructure (VPCs, EKS, EC2) using reusable Terraform modules across development, staging and production.',
+      'Monitoring and operations: used Prometheus and Grafana for metrics and dashboards, Loki for centralized logging, and Slack/email alerting. Administered Linux workloads, troubleshot operational issues and automated recurring tasks with Bash and Python.',
+      'Testing automation: developed Pytest and Selenium suites for API, regression and UI testing, integrated into CI/CD pipelines.',
+      'Cost optimization: improved cloud cost visibility through non-production resource scheduling, tagging, instance rightsizing, usage reviews and AWS budget alerts.',
+      'AI-agent tooling and backend: contributed to internal AI-agent tooling, built MCP (Model Context Protocol) tools, developed and tested Go backend features, and evaluated LLM outputs using an LLM-as-a-judge approach.',
+      'PaaS and SaaS operations: supported cloud infrastructure and software delivery across PaaS and SaaS product environments.',
     ],
-    stack: ['AWS', 'Azure', 'Terraform', 'Kubernetes', 'Helm', 'ArgoCD', 'Docker', 'Jenkins', 'GitHub Actions', 'Prometheus', 'Grafana', 'Loki'],
+    stack: ['Azure AKS', 'AWS EKS', 'Terraform', 'Helm', 'Argo CD', 'Docker', 'Jenkins', 'Prometheus', 'Grafana', 'Loki', 'Trivy', 'SonarQube', 'Gitleaks', 'Pytest', 'Go'],
+  },
+  {
+    role: 'DevOps Engineer',
+    company: 'Tailwinds Cloud Services Private Limited',
+    location: 'Chennai, India',
+    period: 'Jul 2023 – Jun 2025',
+    summary: 'Supported secure delivery of a PaaS product, maintaining CI/CD environments and Azure and AWS infrastructure.',
+    responsibilities: [
+      'Client: Payment Gateway Company. Migrated Docker-based application services to Kubernetes on AWS and introduced Kong for internal service routing.',
+      'Client: Payment Gateway Company. Automated application deployments using Jenkins and Argo CD, improving release consistency and operational reliability.',
+      'Client: Payment Gateway Company. Supported cost optimization and infrastructure monitoring through proactive maintenance and automation.',
+      'Client: IIT Madras Research Park. Deployed and maintained WordPress websites on AWS, managing provisioning, scaling, patching and updates.',
+      'Client: IIT Madras Research Park. Monitored infrastructure health and applied maintenance updates, contributing to reported service uptime.',
+    ],
+    stack: ['Docker', 'Kubernetes', 'Kong', 'MongoDB', 'Jenkins', 'Argo CD', 'AWS', 'WordPress'],
+  },
+  {
+    role: 'Software Engineer Intern',
+    company: 'Tailwinds Cloud Services Private Limited',
+    location: 'Chennai, India',
+    period: 'Apr 2023 – Jun 2023',
+    summary: 'Internship before moving into the DevOps Engineer role.',
+    responsibilities: ['Started at Tailwinds as a Software Engineer Intern, then transitioned to DevOps Engineer.'],
+    stack: [] as string[],
   },
 ]
 
@@ -180,12 +213,13 @@ export const projects: Project[] = [
     name: 'Cloud-Native DevOps Platform',
     status: 'Personal project',
     description:
-      'A production-inspired cloud-native microservices platform built with Docker, Kubernetes, Terraform, GitHub Actions, Helm, Ansible and AWS EKS.',
+      'A production-inspired cloud-native microservices platform built with Node.js/Express, Python/FastAPI, PostgreSQL, Docker, Kubernetes, Terraform, GitHub Actions, Helm, Ansible and AWS EKS.',
     highlights: [
       'Modular Terraform for VPC, IAM and EKS with public/private subnets, NAT Gateway and managed node groups',
       'Multi-stage, non-root Docker builds for Node.js/Express and Python/FastAPI services',
       'GitHub Actions CI with Trivy, Gitleaks and Hadolint',
-      'Ansible server configuration and environment-parameterized Helm deployments',
+      'Kubernetes health probes, resource requests and limits, and environment-parameterized Helm deployments',
+      'Ansible server configuration, with credentials and Terraform state kept out of source control',
     ],
     stack: ['Terraform', 'AWS EKS', 'Kubernetes', 'Helm', 'Ansible', 'Docker', 'GitHub Actions', 'Trivy', 'Gitleaks', 'Hadolint'],
     diagram: 'cloudnative',
@@ -235,7 +269,7 @@ export const lifecycle = [
   { step: 'Testing', note: 'Automated checks' },
   { step: 'Docker', note: 'Containerize' },
   { step: 'Deployment', note: 'Automated release' },
-  { step: 'Cloud Infrastructure', note: 'AWS / Azure' },
+  { step: 'Cloud Infrastructure', note: 'Azure / AWS' },
   { step: 'Monitoring', note: 'Prometheus / Grafana' },
   { step: 'Continuous Improvement', note: 'Feedback loop' },
 ]
@@ -246,7 +280,7 @@ export const heroPipeline = [
   { label: 'CI/CD', tag: 'Jenkins · GitHub Actions' },
   { label: 'Docker', tag: 'container image' },
   { label: 'Kubernetes', tag: 'orchestration' },
-  { label: 'Cloud', tag: 'AWS · Azure' },
+  { label: 'Cloud', tag: 'Azure · AWS' },
   { label: 'Monitoring', tag: 'Prometheus · Grafana' },
 ]
 

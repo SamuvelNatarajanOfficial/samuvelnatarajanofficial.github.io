@@ -19,7 +19,7 @@ export function Experience() {
               <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 sm:p-8">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="text-xl font-semibold text-white">{job.role}</h3>
-                  <span className="font-mono text-sm text-sky-400">{job.period} · {job.duration}</span>
+                  <span className="font-mono text-sm text-sky-400">{job.period}</span>
                 </div>
                 <p className="mt-1 text-slate-300">
                   {job.company} · {job.location}
@@ -33,13 +33,15 @@ export function Experience() {
                     </li>
                   ))}
                 </ul>
-                <ul className="mt-6 flex flex-wrap gap-2" aria-label="Technologies">
-                  {job.stack.map((s) => (
-                    <li key={s}>
-                      <Tag>{s}</Tag>
-                    </li>
-                  ))}
-                </ul>
+                {job.stack.length > 0 && (
+                  <ul className="mt-6 flex flex-wrap gap-2" aria-label="Technologies">
+                    {job.stack.map((s) => (
+                      <li key={s}>
+                        <Tag>{s}</Tag>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </Reveal>
           </li>
