@@ -21,7 +21,7 @@ export const profile = {
   // ---- Contact / social: REPLACE the placeholders below ----
   email: 'samuvelnatarajanofficial@gmail.com',
   github: 'https://github.com/SamuvelNatarajanOfficial',
-  linkedin: 'https://www.linkedin.com/in/samuvel-devops-5j1996/',
+  linkedin: 'https://www.linkedin.com/in/samuvel-natarajan-devops/',
 
   // Place your PDF at public/resume.pdf (replace the placeholder file).
   resume: { path: 'resume.pdf', downloadName: 'Samuvel_Natarajan_Resume.pdf' },
